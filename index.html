@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio|Lisa Shay </title>
+    <link rel="stylesheet" href="style.css"><!--conncect html and css-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'><!--conncect boxicon-->
+</head>
+<body>
+<!------------Front Page------------>
+<div id="front_page">
+    <div class="cover">
+        <div class="container">
+            <nav id="navbar"> <!--navigation-->
+                <img src="images/signature.png" class="logo">
+                <ul id="menu">
+                    <li><a href="#front_page">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contacts">Contact</a></li>
+                    <i class='bx bx-collapse' onclick="closemenu()"></i>
+                </ul>
+                <i class='bx bx-list-ul' onclick="openmenu()"></i>
+            </nav>
+        </div>
+        <div class="homepage-title">
+            <h1><span>Lisa Shay</span></h1>
+            <p>Data Analyst</p>
+        </div>
+        <div class="arrow">
+            <li><a href="#about" style=" color: transparent;
+                text-shadow: 0px 0px 1px rgba(255, 255, 255, .6), 0px 4px 4px rgba(0, 0, 0, .05);
+                text-decoration: none;"></a></li>
+        </div> 
+        
+    </div>
+</div>
+
+<!---------About------------>
+<div id="about">
+    <div class="container">
+        <h1 class="sub-title">About Me</h1>
+        <div class="about-text">
+            <div class="about-intro">
+                <h1 style="color: white;">Hi! I'm <span>Lisa Shay</span></h1>
+                <p style="color: #ababab;">I have experience working with <span>SQL, Excel, Python, Tableau and Figma</span>. I'm a fast learner and be willing to study new things. I enjoy extracting concealed insights within data and providing solutions while working with others as a team.<br>In my spare time, I like go snowbording, running, and drawing with procreate.</p>
+            </div>
+        </div>
+        <div class="contact-icon">
+            <a href="https://wa.me/4407858625722" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+            <a href="https://www.linkedin.com/in/jiunyu-hsieh/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/jiunyu-hsieh?tab=repositories" target="_blank"><i class='bx bxl-github' ></i></a>
+            <a href="https://public.tableau.com/app/profile/jiunyu.hsieh" target="_blank"><i class='bx bxs-color'></i></a>
+        </div>
+        </div>
+    </div>
+</div>
+
+<!-------------Resume------------>
+<div id="resume">
+    <div class="container">
+        <h1 class="sub-title">Resume</h1>
+        <div class="row">
+            <div class="resume-col-1">
+                <img src="images/portrait.jpg">
+            </div>
+            <div class="resume-col-2">
+            
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                </div>
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li><span>2022-2023</span>
+                            <p style="font-weight: 800;margin: 5px 0;">University of Warwick, UK</p>
+                            <p>Msc Supply Chain and Logistics Management</p>
+                            <p><br>Courses: Procurement and Inventory Management, Storage and Warehousing Techniques, Transport Techniques and Management</p>
+                        </li>
+                        <li><span>2018-2022</span>
+                            <p style="font-weight: 800;margin: 5px 0;">East China Normal University, China</p>
+                            <p>BSc Financial Engineering</p>
+                            <p><br>Courses: Multivariate Statistical Analysis, Program Trading, Advanced Excel Application, Financial Modeling and Computation</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023-Now</span>
+                            <p style="font-weight: 800;margin: 5px 0;">Volunteer, Cheylesmore Good Neighbours, UK</p>
+                            <p>One-to-one assistance on Technology: Helped elderly in the community using their phones, tablets, and laptops face-to-face. Produced instruction manual and help older people take notes of technology problems.</p>
+                        </li>
+                        <li><span>2021-2022</span>
+                            <p style="font-weight: 800;margin: 5px 0;">Marketing Intern, TingHsin International Group, China</p>
+                            <p>....</p>
+                        </li>
+                        <li><span>2020-2021</span>
+                            <p style="font-weight: 800;margin: 5px 0;">Operation Intern, Wellem Medical Group, China</p>
+                            <p>Invoice Audit: Updated customers’ data for 8 clinics within the CRM system and cross-referenced invoice records with CRM database.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>Data Cleaning</span>
+                            <p style="margin-top: 10px;">Excel (Microsoft Excel Expert Certificate) <br>Alteryx (Alteryx Advanced Certificate)</p>
+                            <p style="margin-top: 10px;"></p>
+                        </li>
+                        <li><span>Data Analysis</span>
+                            <p style="margin-top: 10px;">SQL (HackerRank SQL Advanced Certificate)<br>Python</p>
+                        </li>
+                        <li><span>Visualisation</span><p style="margin-top: 10px;">Tableau<br>Figma</p>
+                        </li>  
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-----------Projects------------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Customer Churn Analysis of Maven Telecom</h3>
+                    <p>The project uses SQL, Tableau and Figma to analyse the main factors which cause churn. </p>
+                    <a href="https://medium.com/@jyhsieh00/maven-telecom-churn-analysis-450c83c82ec8" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>   
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Supermarket Marketing Analysis</h3>
+                    <p>The project uses Alteryx, Python, Tableau and Figma to predict potential customer based on Logistics Regression. </p>
+                    <a href="https://medium.com/@jyhsieh00/abc-supermarket-marketing-analytics-39155f4f5642" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Maven Slopes Challenge - Ski Resorts Selector</h3>
+                    <p>The project utilises Alteryx, SQL and Tableau to build a user-friendly dynamic dashboard for people to choose the best ski resorts which meet their requirement.</p>
+                    <a href="https://medium.com/@jyhsieh00/maven-slopes-challenge-c072a9810bcb" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-----------Contacts------------->
+<div id="contacts">
+    <div class="container">
+        <div class="row">
+            <div class="contacts-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class='bx bx-send'></i>jyhsieh00@outlook.com</p>
+                <p><i class='bx bx-phone-call'></i>+44 07858625722</p>
+                <div class="social-icons">
+                    <a href="https://wa.me/4407858625722" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="https://www.linkedin.com/in/jiunyu-hsieh/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/jiunyu-hsieh?tab=repositories" target="_blank"><i class='bx bxl-github' ></i></a>
+                    <a href="https://public.tableau.com/app/profile/jiunyu.hsieh" target="_blank"><i class='bx bxs-color'></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2" style="margin-top: 40px;">Download CV</a>
+                
+            </div>
+
+            <div class="contacts-right">
+                <form action="https://formsubmit.co/jyhsieh00@outlook.com" method="POST">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows='6' placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-----------Foot------------->
+<div class="copyright">
+    <p>Copyright © Made by Lisa Shay(Jiunyu Hsieh)</p>
+</div>
+
+
+
+
+
+
+<!-----------Stick Navigation------------->
+<script> 
+    var navbar=document.getElementById("navbar");
+    var menu=document.getElementById("menu");
+
+    window.onscroll = function(){
+        if(window.pageYOffset >= menu.offsetTop){
+            navbar.classList.add("sticky");
+        }
+        else{
+            navbar.classList.remove("sticky");
+        }
+    }
+
+    function openmenu(){
+        menu.style.right='0';
+    }
+    function closemenu(){
+        menu.style.right='-200px';
+    }
+</script>
+
+<!-----------Resume Tabs------------->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add('active-link');
+        document.getElementById(tabname).classList.add('active-tab');
+    }
+</script>
+
+<!--------Contact form in google sheet--------->
+
+
+</body>
+</html>
+
